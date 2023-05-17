@@ -1,0 +1,26 @@
+{
+  "name": "tx-package-tweaker",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:pavlovalor/tx-package-tweaker.git",
+  "author": "Paul Lucius Valor <paul.valor@icloud.com>",
+  "license": "MIT",
+  "scripts": {
+    "start:dev": "ts-node ./src/index.ts",
+    "start:prod": "node ./build/index.js",
+    "test:watch": "jest --watchAll",
+    "test:once": "jest",
+    "lint": "eslint",
+    "build": "rimraf ./build && tsc"
+  },
+  "devDependencies": {
+    "@types/node": "^20.1.7",
+    "@typescript-eslint/eslint-plugin": "^5.43.0",
+    "eslint": "^8.0.1",
+    "eslint-config-standard-with-typescript": "^34.0.1",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "typescript": "*"
+  }
+}
