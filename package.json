@@ -13,7 +13,10 @@
     "test:watch": "jest --watchAll",
     "test:once": "jest",
     "lint": "eslint",
-    "build": "rimraf ./lib && tsc"
+    "build": "rimraf ./lib && tsc && chmod +x .lib/index.js"
+  },
+  "bin": {
+    "tweakpackage": "./lib/index.js"
   },
   "devDependencies": {
     "@types/cli-spinner": "^0.2.1",
