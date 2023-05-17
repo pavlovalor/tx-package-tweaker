@@ -1,4 +1,4 @@
-### Package tweaker `beta`
+### Package tweaker ![npm](https://img.shields.io/npm/v/@pavlovalor/tx-package-tweaker?color=gree&label=NPM%20package)
 Creates PR with updated `package.json` according to specified options/prompts.
 
 <img src=".github/media/demo.gif"/>
@@ -7,10 +7,13 @@ Creates PR with updated `package.json` according to specified options/prompts.
 > PS: It seems that conversion to GIF made it so slow, it looks like I type like grandma
 
 # Installation
-To install tool type:
+To install & use tool type:
 ````bash
-npm install -g @pavlovalor/tx-package-tweaker
-yarn add --global @pavlovalor/tx-package-tweaker
+npm install -g @pavlovalor/tx-package-tweaker && \
+tweakp --interactive
+# or
+yarn add --global @pavlovalor/tx-package-tweaker && \
+tweakp --interactive
 ````
 
 Or your can keep it safe and just clone this repo, install deps, and run dev script:

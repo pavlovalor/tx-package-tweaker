@@ -1,4 +1,9 @@
 {
+    "ignorePatterns": [
+        "/lib",
+        "/build",
+        "/dist"
+    ],
     "env": {
         "browser": true,
         "es2021": true
