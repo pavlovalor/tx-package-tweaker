@@ -1,18 +1,19 @@
 {
-  "name": "tx-package-tweaker",
-  "version": "1.0.0",
-  "main": "index.js",
+  "name": "@pavlovalor/tx-package-tweaker",
+  "version": "1.0.0-beta1",
+  "main": "lib/index.js",
   "repository": "git@github.com:pavlovalor/tx-package-tweaker.git",
   "author": "Paul Lucius Valor <paul.valor@icloud.com>",
   "description": "Tiny CLI script to updates package.json for any bit-bucket repository",
   "license": "MIT",
+  "files": ["lib /**/*"],
   "scripts": {
     "start:dev": "ts-node ./src/index.ts",
     "start:prod": "node ./build/index.js",
     "test:watch": "jest --watchAll",
     "test:once": "jest",
     "lint": "eslint",
-    "build": "rimraf ./build && tsc"
+    "build": "rimraf ./lib && tsc"
   },
   "devDependencies": {
     "@types/cli-spinner": "^0.2.1",
